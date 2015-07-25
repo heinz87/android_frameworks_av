@@ -85,6 +85,8 @@ LOCAL_STATIC_LIBRARIES := \
     libcpustats \
     libmedia_helper
 
+LOCAL_CFLAGS += -O2
+
 #QTI Resampler
 ifeq ($(call is-vendor-board-platform,QCOM),true)
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_EXTN_RESAMPLER)),true)
